@@ -1,0 +1,34 @@
+<div class="container" id="timeline">
+    <ul class="timeline">
+      {% for item in site.data.timeline %}
+      {% if item.position == "left" %}
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check">{{ item.from }}</i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><img src="{{ "/assets/" | append: item.logo_filename | relative_url }}" width="9%" height="9%">  {{ item.title }}</h4>
+              <p><small class="text-muted"> {{ item.from }} — {{ item.to }}</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </li>
+        {% endif %}
+        {% if item.position == "right" %}
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i>{{ item.from }}</div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><img src="{{ "/assets/" | append: item.logo_filename | relative_url }}" width="9%" height="9%">  {{ item.title }}</h4>
+              <p><small class="text-muted">{{ item.from }} — {{ item.to }}</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+  </div>

@@ -1,0 +1,27 @@
+- title: Nodesource
+  from: 2022
+  to: current
+  description: NodeSource helps organizations run production-ready Node.js applications with greater visibility into resource usage and enhanced awareness around application performance and security.
+  logo_filename: nodesource.png
+  position: left
+
+- title: EPAM
+  from: 2021
+  to: 2022
+  description: EPAM Systems is a technology company that provides software engineering services for software development and digital platforms.
+  logo_filename: epam.png
+  position: right
+
+- title: GLOBANT
+  from: 2018
+  to: 2021
+  description: Globant is a digitally native company that helps organizations reinvent and realize their full potential. It is the intersection of innovation, design, and engineering.
+  logo_filename: globant.png
+  position: left
+
+- title: BTG Pactual
+  from: 2013
+  to: 2018
+  description: BTG Pactual is an investment bank and asset and wealth manager with a dominant franchise in Brazil, and a sucessfull international investment and distribution platform.
+  logo_filename: btgpactual.png
+  position: right

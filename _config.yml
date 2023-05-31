@@ -1,0 +1,100 @@
+### Site Settings ###
+title               : >-
+                      Jefferson
+                      Bio
+description         : >-
+                      Hi :wave:, I'm Jefferson a cloud computing "expert" and enthusiast of DevSecOps culture.
+                      This is my personal site and you will find enough to know everything about me.
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : riosje/riosdevops.com     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+#remote_theme        : riosje/riosdevops.com
+open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.md
+  - pages/index.md
+  - documentation/partials/**                           # For Documentation Only
+
+
+### Author Info ###
+author:
+  name              : Jefferson Rios
+  image             : jeff-pic.jpeg
+  #behance           : your_username
+# dribbble          : your_username
+#  email             : XXXX
+  #facebook          : your_username
+  github            : riosje
+# gitlab            : your_username
+# instagram         : your_username
+# kaggle            : your_username
+  linkedin          : jefferson-rios-caro
+  medium            : jefferson-rios
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  #twitter           : your_username
+# vimeo             : your_username
+# youtube           : your_channel_name
+# keybase           : your_username
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  blog:
+    output: true
+    permalink: /blog/:name
+
+### Disqus ###
+disqus:
+  shortname: your-short-name-disqus                     # Your website Shortname on disqus
+
+
+### Analytics ###
+analytics:
+  enabled: false                                        # Set true to enable analytics
+  google:
+    tracking_id: your-google-tracking-id
+
+
+### Buy me a coffee ###
+# See https://www.buymeacoffee.com/
+buymeacoffee:
+  enabled: false
+  username: riosdevops
+  color: "#007bff"
+  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
+  description: "Support me on Buy me a coffee!"
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "page"
+    values:
+      comments: false                                   # Set to true to enable disqus comments
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"

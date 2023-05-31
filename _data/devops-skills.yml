@@ -1,0 +1,35 @@
+- name: AWS (EKS - ECS - LAMBDA - EC2 - S3 - RDS)
+  percentage: 80
+  color: success
+
+- name: Linux
+  percentage: 80
+  color: success
+
+- name: Terraform
+  percentage: 100
+  color: success
+
+- name: GithubActions
+  percentage: 80
+  color: success
+
+- name: Docker
+  percentage: 80
+  color: success
+
+- name: Jenkins
+  percentage: 70
+  color: success
+
+- name: Ansible
+  percentage: 40
+  color: success
+
+- name: Windows Server
+  percentage: 50
+  color: success
+
+- name: Virtualization(VMware)
+  percentage: 60
+  color: success

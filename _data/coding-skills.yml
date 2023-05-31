@@ -1,0 +1,23 @@
+- name: BASH/SH Scripting
+  percentage: 90
+  color: success
+
+- name: NodeJS/JavaScript
+  percentage: 60
+  color: success
+
+- name: PowerShell Scripting
+  percentage: 50
+  color: success
+
+- name: SQL
+  percentage: 45
+  color: warning
+
+- name: Python
+  percentage: 40
+  color: warning
+
+- name: HTML/CSS
+  percentage: 30
+  color: warning
