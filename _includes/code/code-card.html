@@ -1,0 +1,45 @@
+{% for code in site.code %}
+<div class="col-sm-6 mb-3 multi-collapse">
+    <div class="card rounded-lg border wow animate__animated animate__fadeIn">
+            <div class="card-body {{code.language | downcase}}">
+                <section>
+                    <h3 class="card-title">{{ code.name }}</h3>
+                    <span class="badge badge-success">{{ code.language }}</span>
+                    {% for categorty in code.categories %}
+                        <span class="badge badge-secondary">{{ categorty }}</span>
+                    {% endfor %}
+                </section>
+                <section>
+                    {% for section in code.sections%}
+                    <small class="text-muted">{{section[1].description}}</small>
+                    <code>
+                        {% assign lang = {{code.language}} | downcase %}
+                        {% case lang %}
+                          {% when "bash", "sh" %}
+                            {% highlight BASH %}
+                                {{ section[1].codeblock }}
+                            {% endhighlight %}
+                          {% when "js", "javascript", "node" %}
+                            {% highlight JAVASCRIPT %}
+                                {{ section[1].codeblock }}
+                            {% endhighlight %}
+                          {% when "py", "python"%}
+                            {% highlight PYTHON %}
+                                {{ section[1].codeblock }}
+                            {% endhighlight %}
+                          {% when "powershell", "cmd"%}
+                            {% highlight POWERSHELL %}
+                                {{ section[1].codeblock }}
+                            {% endhighlight %}
+                          {% else %}
+                            {% highlight DEFAULT %}
+                                {{ section[1].codeblock }}
+                            {% endhighlight %}
+                        {% endcase %}
+                    </code>
+                    {% endfor %}
+                </section> 
+            </div>
+    </div>
+</div>
+{% endfor %}

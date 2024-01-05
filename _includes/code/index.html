@@ -1,0 +1,15 @@
+<div class="container mt-3">
+    <div class="mb-3">
+        <button class="btn btn-primary" data-toggle="collapse" data-target=".multi-collapse">Show all</button>
+        {%- assign category = site.code | map: "language" | uniq -%}
+        {% for language in category %}
+                <button class="btn btn-primary" data-toggle="collapse" data-target=".{{ language | downcase }}">{{ language | downcase }}</button>
+        {% endfor %}
+    </div>
+    <div>
+        <h5>This is cheatsheet with some basics of syntax and command in different language</h5>
+    </div>
+    <div class="row mt-3">
+        {% include code/code-card.html %}
+    </div>
+</div>

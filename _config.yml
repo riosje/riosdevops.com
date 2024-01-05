@@ -3,50 +3,32 @@ title               : >-
                       Jefferson
                       Bio
 description         : >-
-                      Hi :wave:, I'm Jefferson a cloud computing "expert" and enthusiast of DevSecOps culture.
-                      This is my personal site and you will find enough to know everything about me.
+                      Hi :wave:, I'm Jefferson a DevOps and Platform Engineer. On this
+                      personal site, I invite you to explore the facets of my professional journey
+                      and interests, you'll find my blogposts, experience, and more.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : riosje/riosdevops.com     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 #remote_theme        : riosje/riosdevops.com
 open_new_tab        : false                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
-
 ### Plugins ###
 plugins:
   - jemoji
 
-
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
+  - pages/tags.md
   - pages/404.md
   - pages/index.md
   - documentation/partials/**                           # For Documentation Only
-
 
 ### Author Info ###
 author:
   name              : Jefferson Rios
   image             : jeff-pic.jpeg
-  #behance           : your_username
-# dribbble          : your_username
-#  email             : XXXX
-  #facebook          : your_username
   github            : riosje
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
   linkedin          : jefferson-rios-caro
   medium            : jefferson-rios
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  #twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
-# keybase           : your_username
 
 
 ### Posts ###
@@ -58,6 +40,9 @@ collections:
   blog:
     output: true
     permalink: /blog/:name
+  code:
+    output: true
+    permalink: /code
 
 ### Disqus ###
 disqus:
@@ -66,9 +51,9 @@ disqus:
 
 ### Analytics ###
 analytics:
-  enabled: false                                        # Set true to enable analytics
+  enabled: true                                        # Set true to enable analytics
   google:
-    tracking_id: your-google-tracking-id
+    tracking_id: G-QL5DB8GY1P
 
 
 ### Buy me a coffee ###
@@ -85,12 +70,11 @@ buymeacoffee:
 defaults:
   - scope:
       path: ""
-      type: "page"
+      type: "pages"
     values:
-      layout: "page"
+      layout: "pages"
     values:
       comments: false                                   # Set to true to enable disqus comments
-
 
 ### Exclude from processing ###
 exclude:
@@ -98,3 +82,6 @@ exclude:
   - CONTRIBUTING.md
   - LICENSE
   - "*.log"
+
+kramdown:
+  syntax_highlighter: rouge
